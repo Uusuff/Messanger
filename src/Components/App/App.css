@@ -1,13 +1,15 @@
 .content {
    background-color: rgb(40, 24, 104);
-   height: 800px;
+   height: 100vh;
    display: flex;
 
 }
 .chat {
+   display: flex;
+   flex-direction: column;
    background-color: rgb(0, 212, 60);
    width: 300px;
-   height: 400px;
+   height: 405px;
    border-radius: 5px;
    margin: auto;
    padding: 10px;
@@ -18,36 +20,43 @@
    border: 1px solid;
    padding: 2px;
 }
-.massages{
-   height: 78%;
+.massages {
+   min-height: 315px;
    margin: 5px 0 5px 0;
    padding: 5px;
    border-radius: 10px;
    background-color: rgb(86, 241, 94);
+   overflow-y: auto;
 }
 .massage {
    display: flex;
    flex-direction:column;
+  
 }
 input {
-   width: 70%;
-   height: 30px;
    border-radius: 10px;
    background-color: rgb(86, 241, 94);
    
 }
+.AddMessage{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5px;
+
+}
 button {
    background-color: rgb(86, 241, 94);
    margin-left: 5px;
-   width: 20%;
-   height: 30px;
+   height: 35px;
    border-radius: 10px;
    border: 2px solid;
 }
 .span {
+   word-break: break-all;
    background-color: #fff;
    margin: 2px;
+   max-width: 280px;
    width: max-content;
-   padding: 0 5px 0 5px;
+   padding: 5px;
    border-radius: 5px;
 }

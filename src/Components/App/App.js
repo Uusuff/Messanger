@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css"
 import Messages from "../Messages/Messages";
 import NewMessage from "../NewMessage/NewMessage";
 import UserId from "../UserId/UserId";
+import { saveUserId } from "../Servises/Ss.servise";
 
 function App() {
-   const [userId, setUserId] = useState((Math.random() + 1).toString(36).substring(7));
+   const [userId, setUserId] = useState();
+   const newUserId = saveUserId();
+   
+   
+   useEffect(() => {
+      setUserId(newUserId)
+   },[])
+
    
    
    return (

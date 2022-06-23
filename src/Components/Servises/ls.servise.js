@@ -1,4 +1,3 @@
-
 const msgsLsKey = 'messages';
 
 export function pushMsg(userId, text) {
