@@ -6,15 +6,7 @@ import UserId from "../UserId/UserId";
 import { saveUserId } from "../Servises/Ss.servise";
 
 function App() {
-   const [userId, setUserId] = useState();
-   const newUserId = saveUserId();
-   
-   
-   useEffect(() => {
-      setUserId(newUserId)
-   },[])
-
-   
+   const userId = saveUserId();
    
    return (
       <div className="content">

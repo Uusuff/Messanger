@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getMsgList } from "../Servises/ls.servise";
 
-
 export default function Messages () {
    const msgList = getMsgList();
    const [messages, setMessages] = useState(msgList);
