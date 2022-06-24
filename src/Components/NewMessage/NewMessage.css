@@ -1,0 +1,18 @@
+.AddMessage{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5px;
+}
+
+input {
+   border-radius: 10px;
+   background-color: rgb(86, 241, 94); 
+}
+
+button {
+   background-color: rgb(86, 241, 94);
+   margin-left: 5px;
+   height: 35px;
+   border-radius: 10px;
+   border: 2px solid;
+}

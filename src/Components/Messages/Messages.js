@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getMsgList } from "../Servises/ls.servise";
+import { getMsgList } from "../../Servises/ls.servise";
+import "./Messages.css"
 
 export default function Messages () {
    const msgList = getMsgList();
@@ -7,7 +8,7 @@ export default function Messages () {
 
    function updateMsgList () { 
       setMessages(getMsgList());
-   }
+   };
    
    useEffect(()=>{
       window.addEventListener('storage', updateMsgList);
@@ -15,7 +16,7 @@ export default function Messages () {
       return () => {
          window.removeEventListener('storage', updateMsgList);
       }
-   },[])
+   },[]);
    
    return (
       <div className="massages">
@@ -34,4 +35,4 @@ export default function Messages () {
          }
       </div>
    )
-}
+};

@@ -1,12 +1,13 @@
 import React, {useState} from "react";
-import { pushMsg } from "../Servises/ls.servise";
+import { pushMsg } from "../../Servises/ls.servise";
+import "./NewMessage.css"
 
 export default function NewMessage (props) {
    const [msg, setMsg] = useState("");
    
    const handelSentMsg = () => {
       if(!msg) return;
-      pushMsg(props.userId, msg);
+      pushMsg(props.userId, msg)
       setMsg ("");
       const event = new Event('storage');
       window.dispatchEvent(event);

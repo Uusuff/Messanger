@@ -1,0 +1,21 @@
+.massages {
+   min-height: 315px;
+   margin: 5px 0 5px 0;
+   padding: 5px;
+   border-radius: 10px;
+   background-color: rgb(86, 241, 94);
+   overflow-y: auto;
+}
+.massage {
+   display: flex;
+   flex-direction:column;
+}
+.span {
+   word-break: break-all;
+   background-color: #fff;
+   margin: 2px;
+   max-width: 280px;
+   width: max-content;
+   padding: 5px;
+   border-radius: 5px;
+}
